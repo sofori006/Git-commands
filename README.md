@@ -33,6 +33,16 @@ The official Git built for windows is available for download on the Git website 
 You can get more information from [https://gitforwindows.org](https://gitforwindows.org).
 For an automated installation use the [Git Chocolatey package](https://chocolatey.org/packages/git) which is a community maintained.
 
+## Your Identity
+We first need to set our identity the first time we install Git, because git uses this information for every Git commit.
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+The ``--global`` option means Git will always use that information for everything you do on that system. You can remove ``--global`` option you want to override this with different email and name on a specific project.
 
-
+You can view all your Git settings and their location with the command below:
+```
+git config --list --show-origin
+```
 
